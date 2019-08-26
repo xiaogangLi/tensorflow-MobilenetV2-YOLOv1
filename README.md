@@ -11,7 +11,7 @@ This is the implementation of YOLOv1 for object detection in Tensorflow. It cont
 * Pandas  
 
 ### 2 Define your class names  
-Download this repository and unzip  
+Download  and unzip this repository.  
 `cd ../YOLOv1/label`  
 Open the `label.txt` and revise its class names as yours.  
 
