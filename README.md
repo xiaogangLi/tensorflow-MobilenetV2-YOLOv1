@@ -1,7 +1,7 @@
 # Object Detection
-This is the implementation of Video Transformer Network (VTN) approach for Action Recognition in Tensorflow. It contains complete code for preprocessing,training and test. Besides, this repository is easy-to-use and can be developed on Linux and Windows.  
+This is the implementation of YOLOv1 for object detection in Tensorflow. It contains complete code for preprocessing,training and test. Besides, this repository is easy-to-use and can be developed on Linux and Windows.  
 
-[VTN : Kozlov, Alexander, Vadim Andronov, and Yana Gritsenko. "Lightweight Network Architecture for Real-Time Action Recognition." arXiv preprint arXiv:1905.08711 (2019).](https://arxiv.org/abs/1905.08711)
+[YOLOv1 : Redmon, Joseph, et al. "You only look once: Unified, real-time object detection." Proceedings of the IEEE conference on computer vision and pattern recognition. 2016.](https://arxiv.org/abs/1506.02640)
 
 ## Getting Started
 ### 1 Prerequisites  
@@ -10,39 +10,24 @@ This is the implementation of Video Transformer Network (VTN) approach for Actio
 * Opencv-python  
 * Pandas  
 
-### 2 Download this repo and unzip it  
-`cd ../VTN/Label_Map`  
+### 2 Define your class names  
+Download this repo and unzip it  
+`cd ../YOLOv1/label`  
 Open the `label.txt` and revise its class names as yours.  
 
-### 3 Generate directory  
-`cd ../VTN/Code`  
-`run python make_dir.py`  
-Then some subfolders will be generated in  `../VTN/Raw_Data` , `../VTN/Data/Train`,  `../VTN/Data/Test`, `../VTN/Data/Val`, where name of the subfolders is your class names defined in `label.txt`.  
+### 3 Prepare images  
+Copy your images and annotations files to subfolders in `../YOLOv1/data/annotation/images` and `../YOLOv1/data/annotation/images/xml` separately. Annotations are abtained by [a graphical image annotation tool](https://github.com/tzutalin/labelImg) and  saved as XML files in PASCAL VOC format.
+`cd ../YOLOv1/Code`  
+`run python spilt.py`  
+Then train and val images will be generated in  `../YOLOv1/data/annotation/train`,  `/YOLOv1/data/annotation/test`.  
 
-### 4 Prepare video clips  
-According to the class, copy your raw AVI videos to subfolders in `../VTN/Raw_Data`. Optionally, you can use the public HMDB-51 dataset, which can be found [here](http://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/).  
-`cd ../VTN/Code`  
-`run python prepare_clips.py`  
-Clips generated will be saved in the subfolders in   `../VTN/Data/Train`,  `../VTN/Data/Test`, `../VTN/Data/Val`. These clips will be used for training, test and validation.  
-
-### 5 Compute the mean image from training clips(optional)  
-`cd ../VTN/Code`  
-`run python mean_img.py`    
-And then a mean image is saved in directory `../VTN/Data/Train`.  
-
-### 6 Train model  
+### 4 Train model  
 The model parameters, training parameters and eval parameters are all defined by `parameters.py`.  
-`cd ../VTN/Code`  
-`run python train.py PB` or `python train.py CHECKPOINT`  
-The model will be saved in directory `../VTN/Model`, where "PB" and "CHECKPOINT" is two ways used for saving model for Tensorflow.  
+`cd ../YOLOv1/Code`  
+`run python train.py`  
+The model will be saved in directory `../YOLOv1/model/checkpoint`, and some detection results are saved in `../YOLOv1/pic`. 
  
-### 7 Test model(pb)  
-Test model using clips in `../VTN/Data/Test`.  
-`cd ../VTN/Code`  
-`run python test.py N`  
-Where N is not more than the number of clips in test set. Note that we do not use batch during test. There may be out of memory errors with a large N. In this case, you can modify the `test.py` to use batch.    
-
-### 8 Visualize model using Tensorboard  
-`cd ../VTN`  
-`run tensorboard --logdir=Model/`   
+### 5 Visualize model using Tensorboard  
+`cd ../YOLOv1`  
+`run tensorboard --logdir=model/`   
 Open the URL in browser to visualize model.  
