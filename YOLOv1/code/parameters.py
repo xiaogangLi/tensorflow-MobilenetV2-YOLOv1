@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Jul 25 10:47:42 2019
 
-@author: LiXiaoGang
-"""
 from __future__ import division
 
 import os
