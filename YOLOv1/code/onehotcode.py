@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sun Apr 28 19:46:04 2019
-
-@author: LiXiaoGang
-"""
 
 
 import os
@@ -11,7 +6,6 @@ import numpy as np
 import pandas as pd
 
 
-# load label.txt
 path = os.path.dirname(os.getcwd())
 labels = pd.read_csv(os.path.join(path,'label','label.txt'))
 
