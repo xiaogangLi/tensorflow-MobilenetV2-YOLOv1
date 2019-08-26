@@ -1,10 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sun Apr 28 15:46:14 2019
-https://github.com/xiongzihua/pytorch-YOLO-v1
-https://github.com/lovekittynine/my_tensorflow_yolo
-@author: LiXiaoGang        
-"""
+
 from __future__ import division
 
 import os
