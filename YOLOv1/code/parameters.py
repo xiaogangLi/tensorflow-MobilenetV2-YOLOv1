@@ -10,7 +10,7 @@ path = os.path.dirname(os.getcwd())
 labels = pd.read_csv(os.path.join(path,'label','label.txt'))
 
 # training para
-BATCH_SIZE = 2
+BATCH_SIZE = 16
 LEARNING_RATE = 0.0001
 TRAIN_STEPS = 150000
 
