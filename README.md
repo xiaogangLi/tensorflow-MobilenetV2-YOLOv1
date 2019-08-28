@@ -16,7 +16,7 @@ Download  and unzip this repository.
 Open the `label.txt` and revise its class names as yours.  
 
 ### 3 Prepare images  
-Copy your images and annotation files to directories `../YOLOv1/data/annotation/images` and `../YOLOv1/data/annotation/images/xml` separately, where annotations should be obtained by [a graphical image annotation tool](https://github.com/tzutalin/labelImg) and  saved as XML files in PASCAL VOC format.  
+Copy your images and annotation files to directories `../YOLOv1/data/annotation/images` and `../YOLOv1/data/annotation/images/xml` separately, where the annotations should be obtained by [a graphical image annotation tool](https://github.com/tzutalin/labelImg) and  saved as XML files in PASCAL VOC format.  
 `cd ../YOLOv1/Code`  
 `run python spilt.py`  
 Then train and val images will be generated in  `../YOLOv1/data/annotation/train` and  `/YOLOv1/data/annotation/test` directories, separately.  
