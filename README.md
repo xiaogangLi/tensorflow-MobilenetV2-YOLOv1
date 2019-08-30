@@ -35,4 +35,5 @@ Open the URL in browser to visualize model.
 ## Examples  
 Here is a successful detection example:   
 
-![Image]<div align=center><img src="https://github.com/xiaogangLi/tensorflow-MobilenetV2-YOLOv1/blob/master/YOLOv1/pic/example.jpg"></div>
+![Image](https://github.com/xiaogangLi/tensorflow-MobilenetV2-YOLOv1/blob/master/YOLOv1/pic/example.jpg)
+![Image](https://github.com/xiaogangLi/tensorflow-MobilenetV2-YOLOv1/blob/master/YOLOv1/pic/example.jpg)
