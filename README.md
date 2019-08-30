@@ -31,3 +31,5 @@ The model will be saved in directory `../YOLOv1/model/checkpoint`, and some dete
 `cd ../YOLOv1`  
 `run tensorboard --logdir=model/`   
 Open the URL in browser to visualize model.  
+
+![image](https://github.com/xiaogangLi/tensorflow-MobilenetV2-YOLOv1/blob/master/YOLOv1/pic/example.jpg)
