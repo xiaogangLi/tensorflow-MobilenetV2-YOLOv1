@@ -28,5 +28,5 @@ LAMBDA_NOOBJ = 0.5
 SCORE_THRESHOLD = 0.1    # background when confidence scores < 0.1
 NMS_THRESHOLD = 0.5
 
-MODEL_NAME = 'model.ckpt-'
+MODEL_NAME = 'model.ckpt'
 CHECKPOINT_MODEL_SAVE_PATH = os.path.join(path,'model','checkpoint')
