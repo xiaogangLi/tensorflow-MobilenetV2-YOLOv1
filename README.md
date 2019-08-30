@@ -33,5 +33,6 @@ The model will be saved in directory `../YOLOv1/model/checkpoint`, and some dete
 Open the URL in browser to visualize model.  
 
 ## Examples  
-Here is a successful detection example:  
-![Alt image](https://github.com/xiaogangLi/tensorflow-MobilenetV2-YOLOv1/blob/master/YOLOv1/pic/example.jpg)
+Here is a successful detection example:   
+
+![Alt image]<div align=center><img src="https://github.com/xiaogangLi/tensorflow-MobilenetV2-YOLOv1/blob/master/YOLOv1/pic/example.jpg" width="300" height="450" /></div>
