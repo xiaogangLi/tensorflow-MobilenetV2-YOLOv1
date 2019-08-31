@@ -25,7 +25,7 @@ INPUT_SIZE = 448
 NUM_CLASSESS = len(labels.Class_name)
 LAMBDA_COORD = 5
 LAMBDA_NOOBJ = 0.5
-SCORE_THRESHOLD = 0.1    # background when confidence scores < 0.1
+SCORE_THRESHOLD = 0.5    # background when confidence scores < 0.5
 NMS_THRESHOLD = 0.5
 
 MODEL_NAME = 'model.ckpt'
