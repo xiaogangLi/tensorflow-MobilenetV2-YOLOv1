@@ -111,7 +111,7 @@ def save_instance(detections):
         ymin = int(box[1]*parameters.INPUT_SIZE)
         xmax = int(box[2]*parameters.INPUT_SIZE)
         ymax = int(box[3]*parameters.INPUT_SIZE)
-        prob = round(box[4]*100)
+        prob = min(round(box[4]*100),100.0)
         txt = name +':'+ str(prob) + '%'
         
         font = cv.FONT_HERSHEY_PLAIN
