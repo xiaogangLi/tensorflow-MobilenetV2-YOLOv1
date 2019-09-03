@@ -21,7 +21,7 @@ Copy your images and annotation files to directories `../YOLOv1/data/annotation/
 `run python spilt.py`  
 Then train and val images will be generated in  `../YOLOv1/data/annotation/train` and  `/YOLOv1/data/annotation/test` directories, respectively.  
 
-### 4 Train model  
+### 4 Train model using Tensorflow  
 The model parameters, training parameters and eval parameters are all defined by `parameters.py`.  
 `cd ../YOLOv1/Code`  
 `run python train.py`  
